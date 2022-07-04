@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hex Tool</title>
+</head>
+<body>
+
+    <div class="container">
+        <p class="h1">Pick your color online.</p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <!-- <img class="img-fluid" src="res/ben-10.jpg" alt=""> -->
+                <!-- <img class="img-fluid" src="res/1.webp" alt=""> -->
+                <div class="imageSelector">
+                    <div class="uf">
+                        <form action="">
+                            <label for="uf-input">Choose File</label>
+                            <input type="file" id="uf-input">
+                        </form>
+                    </div>
+                    <div class="lfw">
+                        <input type="text" id="lfw-input" placeholder="https://...">
+                        <button id="lfw-btn">Go</button>
+                    </div>
+                </div>
+                <canvas></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img class="img-fluid" id="my-img" src="res/patrick.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="pallete">
+                    <p class="text-0">Use the online image color picker above to select a color and get the HTML Color Code of this pixel.</p>
+                    <p class="text-0">* click on the color to copy the its hexcode.</p>
+                    <div class="color-0">
+                        <div class="box"></div>
+                        <div class="hex-code">#FFFFFF</div>
+                        <span style="display: none;">Copied to clipboard!</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
